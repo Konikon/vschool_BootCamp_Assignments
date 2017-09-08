@@ -1,0 +1,46 @@
+body {
+    
+    background-color: lemonchiffon;
+    shape-margin: 20%;
+    border-style: double
+    border-width: thick;
+}
+
+header{
+    background-color: burlywood
+}
+h1{
+    color: dimgray;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 6em;
+}
+
+img{
+    display: block;
+        margin: 0 auto;
+}
+
+p{
+    color: saddlebrown;
+    font-size: 20px;
+    line-height: 200%;
+    margin: 2cm 4cm 3cm 4cm;
+}
+
+#fake{
+    font-style: italic;      
+}
+
+#underline{
+    text-decoration: underline
+}
+
+h1{
+    font-size: 2em
+}
+
+p{
+    -webkit-column-count: 3
+
+}
