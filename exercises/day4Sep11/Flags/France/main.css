@@ -1,0 +1,35 @@
+.parentblock1{
+    height: 500px;
+    width: 100%;
+    background-color: #ff0000;
+    
+   
+    
+    
+}
+
+.block2{
+    height: 200px;
+    width: 10%;
+    background-color: #ffffff;
+    position: absolute;
+    
+    
+    
+}
+
+.block3{
+    height: 10px;
+    width: 50%;
+    background-color: #ffffff;
+    position: absolute;
+   
+}
+
+.circle
+{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background: blue;
+}

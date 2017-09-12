@@ -1,0 +1,31 @@
+.box1 {
+    border: 2px dashed red;
+    height: : 200px;
+    width: 30%;
+    background-color: darkgoldenrod;
+    display: inline-block;
+    position: relative;
+}
+
+.inline{
+    border: 2px dashed blue;
+    width:30%;
+/*        this width does notthing cause ???*/
+            display: inline-block;
+}
+
+li{
+    text-decoration: underline;
+}
+
+ul {
+    color: red;
+}
+
+/*OR*/
+
+/*div.list li*/
+
+li:nth-child(even){
+    color: red;
+}

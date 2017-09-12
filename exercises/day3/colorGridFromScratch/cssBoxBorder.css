@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 2% 5% 10% 5%;
+    font-size: 0px;
+}
+
+body {
+    background: #ffffff
+}
+
+.topPinkBlock {
+    display: inline-block;
+    background: #f5c6d6;
+    align-content: space-around;
+    width: 80%;
+    height: 100px;
+    margin: .5% .5% .5% .5%;
+}
+
+.middlePink4Block {
+    display: inline-block;
+    background: #ee2e84;
+    width: 19.25%;
+    height: 100px;
+    margin: .5% .5% .5% .5%;
+}
+
+.middleBlue2Block {
+    display: inline-block;
+    background: #85cfd8;
+    width: 39.6%;
+    height: 100px;
+    margin: .5% .5% .5% .5%;
+}
+
+.lastgreen75orang25Block {
+    display: inline-block;
+    background: #8dc63f;
+    width: 57%;
+    height: 100px;
+    margin: .5% .5% .5% .5%;
+}
+
+.lastgreen75orang25Block2 {
+    display: inline-block;
+    background: #e76e34;
+    width: 22.2%;
+    height: 100px;
+    margin: .5% .5% .5% .5%;
+}
+
+/* 1)this is not responsive with change in size of screen space unlike the problem that is given*/
+/* 2) the top global element selector * has wired fontsize style that I dont understand 
+    3) the margin in the global applicator is symmetrical but the image is not. How to remedy that 
+    4) can the content be aligned in page center instead/inaddition to global margins */

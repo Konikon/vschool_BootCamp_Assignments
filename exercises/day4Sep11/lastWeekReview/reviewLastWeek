@@ -1,0 +1,15 @@
+var captainPlanet  = ["planet", "Wind", "Water", "fire", "Heart"];
+var backwards =[]
+For(var i = 0; i < captainPlanet.length; i++){
+// turn the array in to a sring
+var arrStr = captainPlanet[i].split("");
+var reversed = arrStr.reverse();
+Console.log(reverse.join("");
+}
+            
+            OR
+            
+For(var i = 0; i < captainPlanet.length; i++){
+  backwards.push(captainPlanet[i].split("").reverse().join(""));
+}
+  console.log(backwards.push)
