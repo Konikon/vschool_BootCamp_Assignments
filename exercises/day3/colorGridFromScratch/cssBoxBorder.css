@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 2% 5% 10% 5%;
+    border: white solid 2px; 
+    margin: 2% 1% 10% 10%;
     font-size: 0px;
 }
 
