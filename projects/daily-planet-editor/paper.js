@@ -11,7 +11,7 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies = ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"];
+var enemies = ["Lex", "Batman", "Darkside", "Brainiac", "General Zod", "Doomsday"];
 
 function whoWins(isThereKryptonite, enemyName) {
     if (!isThereKryptonite) {
@@ -23,7 +23,7 @@ function whoWins(isThereKryptonite, enemyName) {
 
 for (var i = 0; i < enemies.length; i++) {
     var isThereKryptonite = (i % 2 === 0);
-    console.log(whoWins(isThereKryptonite, Enemies[i]));
+    console.log(whoWins(isThereKryptonite, enemies[i]));
 }
 
 function howAttractedIsLoisLaneToMe() {

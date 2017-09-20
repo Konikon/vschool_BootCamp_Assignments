@@ -1,0 +1,71 @@
+/*
+*{
+    border: 3px solid white;
+}
+*/
+
+/*body */
+/*   background-image: url("http://i61.tinypic.com/2mhvnns.jpg");*/
+    
+/*}  */
+body {
+    background-image:url("http://www.coryarcangel.com/images/artwork/arcangel-super-mario-clouds.gif");
+}
+
+h1 {
+    color: #FFA31F;
+    font-size: 3em;
+    text-align: center;
+    border: 2px double white;
+}
+
+.img{
+width: 80%;
+    height: 80%;
+}
+
+.baddies {
+    -webkit-column-count: 3;
+    padding: 5%;
+    opacity: 2;
+    border: 2px solid white;
+}
+
+.goomba {
+/*        width: 32%;*/
+    color: #3B1513;
+    font-size: 1.2em;
+    display: block;
+   
+}
+
+.bob-bombs {
+/*       width: 32%;*/
+    color: #101E3B;
+    font-size: 1.2em;
+    display: block;
+    padding: 5%;
+    
+}
+
+.cheep-cheep {
+/*        width: 32%;*/
+    color: #093B16;
+    font-size: 1.2em;
+    display: block;
+    padding: 5%;
+    
+}
+.grand-total{
+    text-align:center;
+    color: #3B1F15;
+    border: 2px solid white;
+}
+.footer {
+    text-align: center;
+    color: #E80C7A;
+    font-size: 1em;
+    padding: 2%;
+}
+
+

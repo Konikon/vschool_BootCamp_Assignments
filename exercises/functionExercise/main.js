@@ -83,13 +83,27 @@ function fibonaccier(f) {
         return fibonaccier(f - 1) + fibonaccier(f - 2);
     }
 }
-console.log((4));
+console.log(fibonaccier(4));
+
+function fibonacciSeq(f) {
+    for (i = 0; i < f; i++) {
+        var seq = [];
+        fibonaccier(i);
+        seq.push(fibonaccier(i));
+        console.log(seq);
+    }
+}
 
 
 
 
 //  4b) Write a function to solve the quadratic equation. (It should accept three numbers as parameters, and then return an array with the resulting x values.)
 //
+
+
+var quadSolvr (){
+    
+}
 
 
 
@@ -99,6 +113,3 @@ console.log((4));
 
 
 //  4c) Write a function that accepts a string as a parameter. Return the most frequently occuring letter in that string.
-
-
-

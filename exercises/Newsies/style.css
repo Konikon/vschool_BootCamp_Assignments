@@ -2,7 +2,7 @@ body {
     
     background-color: lemonchiffon;
     shape-margin: 20%;
-    border-style: double
+    border-style: double;
     border-width: thick;
 }
 
@@ -26,6 +26,7 @@ p{
     font-size: 20px;
     line-height: 200%;
     margin: 2cm 4cm 3cm 4cm;
+    -webkit-column-count: 3;
 }
 
 #fake{
@@ -33,14 +34,10 @@ p{
 }
 
 #underline{
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 h1{
-    font-size: 2em
+    font-size: 2em;
 }
 
-p{
-    -webkit-column-count: 3
-
-}

@@ -48,3 +48,45 @@ printBruno(upTownFun);
      
 //     add line breaks
      
+     
+     
+     function lyricP (){
+//
+//want to loop through each word and print it. If the first letter of the word is caplital print it on new line
+         
+         
+1) take each index of array,
+2) check if it starts with a capital letter
+3) if so start on a new line
+         
+         
+
+         var lyricArr = [];
+         for(var i = 0; i < upTownFun; i ++){
+             if upTownFun[i] === 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     

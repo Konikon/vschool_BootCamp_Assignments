@@ -1,0 +1,15 @@
+h1.header{
+/*    h1.header styles for this header any other header can have different styling with just the tag h1*/
+    text-align: center;
+    font-size: 2em;
+}
+
+form.input{
+    text-align: center;
+}
+
+div.list{
+    width:25%;
+    margin:auto;
+    text-align: left;
+}

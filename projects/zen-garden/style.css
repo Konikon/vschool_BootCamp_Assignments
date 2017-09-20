@@ -1,0 +1,61 @@
+/*
+.css-zen-head{
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    height: 250px;
+    font-family: 'Julius Sans One';
+    color: white;
+}
+
+.subheading{
+    font-family: 'Libre Baskerville';
+    color:lightgrey;
+}
+
+.brush-circle{
+    display:inline-block;
+    background: url("http://www.csszengarden.com/214/enso.svg");
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}*/
+
+.A{
+    border: 1px dotted red;
+    background-color: aliceblue;
+/*    height: 200px;*/
+}
+.B{
+    border: 1px dotted red;
+    background-color: aliceblue;
+    height: 150px;
+}
+.C{
+    border: 1px dotted red;
+    background-color: aliceblue;
+    height: 50px;
+}
+.D{
+    border: 1px dotted red;
+    background-color: lavender;
+    height: 50px;
+}
+.E{
+    border: 1px dotted red;
+    background-color: antiquewhite;
+    height: 50px;
+}
+.F{
+    border: 1px dotted red;
+    background-color: aquamarine;
+    height: 50px;
+}
+.G{
+    border: 1px dotted red;
+    background-color: aliceblue;
+    height: 50px;
+}
+.H{
+    border: 1px dotted red;
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%
+}

@@ -10,7 +10,7 @@ var shopper = {
         morningOrEve: "Morning",
         timeOfDay: 10,
         isDaytime: true,
-        cartItems: groceryCart = ["bread", "eggs", "milk", "fruits", "vegetables"],
+        cartItems: ["bread", "eggs", "milk", "fruits", "vegetables"],
         speak: function () {
             return "Welcome shopper!!!"
         }
