@@ -1,0 +1,147 @@
+html{
+        
+    background-image: url("http://www.csszengarden.com/214/bamboo.png");
+    background-size: 100%;
+    
+}
+.section2 {
+    position: absolute;
+    top: 310px;
+    width: 100%;
+}
+p{
+}
+.stuff {
+    z-index: 3;
+}
+.listbox {
+    height: 1000px;
+    background-color: #C4FFC4;
+    z-index: 3;
+}
+.section3 {
+    position: absolute;
+    top: 1310px;
+    height: 100%;
+    width: 100%;
+}
+.stuff2 {
+    height: 827px;
+    z-index: 3;
+    background-color: forestgreen;
+    filter: opacity(.35);
+}
+.listbox2 {
+    height: 827px;
+    background-color: forestgreen;
+    filter: opacity(.65) contrast(.6);
+    z-index: 3;
+}
+.hoverimg {
+    background-image: url("http://www.csszengarden.com/214/contours@2x.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.hoverimg2 {
+    background-image: url("http://www.csszengarden.com/214/gridlines.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    filter: brightness(5);
+}
+.center {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+}
+.center2 {
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    top: 126px;
+}
+.imgrezise {
+    height: 130px;
+    display: inline-block;
+}
+.header {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+}   
+.box {
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    background-size: 100%;
+    height: 310px;
+    z-index: -1;
+    position: absolute;
+    z-index: -1;
+}
+.cof {
+    height: 310px;
+}
+.co {
+    height: 310px;
+    background-color: black;
+    filter: opacity(.15);
+}
+@media (max-width: 1132px) {
+    .section2 {
+        top: 230px;
+    }
+    .stuff {
+        width: 100%;
+    }
+    .stuff2 {
+        width: 100%;
+    }
+    .listbox {
+        display: none;
+    }
+    .listbox2 {
+        display: none;
+    }
+    .hoverimg {
+        width: 100%;
+    }
+    .center2 {
+        top: 1px;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .box {
+        height: 230px;
+    }
+    .cof {
+        height: 155.07px;
+        width: 100%
+    }
+    .co {
+        height: 73px;
+        width: 100%;
+        background-color: white;
+    }
+    .imgrezise {
+        height: 80px;
+        filter: opacity(.7);
+    }
+}
+@media (max-width: 612px) {
+    .header {
+        font-size: 20px;
+    }
+    .box {
+        height: 250px;
+        background-size: 170%;
+    }
+    .cof {
+        height: 175.07px;
+    }
+    .co {
+        height: 73px;
+    }
+}

@@ -21,18 +21,18 @@ var letterCount = {};
 //        uniques += splitPhrase[i];
 //        
 //    }
-//}
+////}
 // console.log(count.length);
 //console.log(uniques.length);
 
-//splitPhrase.forEach(function(letter){
-//    if(letterCount[letter] === undefined){
-//        letterCount[letter] = 1;
-//    } else {
-//        letterCount[letter]++;
-//    }
-//    })
-//console.log(letterCount);
+splitPhrase.forEach(function(letter){
+    if(letterCount[letter] === undefined){
+        letterCount[letter] = 1;
+    } else {
+        letterCount[letter]++;
+    }
+    })
+console.log(letterCount);
 
 
 var vegetables = ["carrot", "zuchini", "eggplant"];
