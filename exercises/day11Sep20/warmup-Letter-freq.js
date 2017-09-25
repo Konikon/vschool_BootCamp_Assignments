@@ -41,3 +41,6 @@ console.log(item);
 console.log(index); 
 console.log(array);
 });
+
+
+//v v v v important info is that array methods like forEach, map, return, find, some, every all take apart from the regular parameters, an index parameter and array paramter as shown above.

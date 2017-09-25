@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel-Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="form-body">
+      <form name="travelForm">
+           <h3><input type="text" id="fName"/> First Name </h3>
+           <h3><input type="text" id="lName"/> Last Name </h3>
+           <h3><input type="number" min="0" id="age"/> Age </h3>
+           <h3>Gender<br>
+                Male<input name="genderRadio" value="male" type="radio"/><br>
+                Female<input name="genderRadio" value="female" type="radio"/><br>
+                Other<input name="genderRadio" value="other" type="radio"/><br>
+           </h3>
+           <h3> Location to fly to <br>
+                Timbuktu<input name="flyToLocatios" value="Timbuktu" type="radio"/><br>
+                Ulanbataar<input name="flyToLocatios" value="Ulanbatar" type="radio"/><br>
+                Kathmandu<input name="flyToLocatios" value="Kathmandu" type="radio"/><br>
+            </h3>
+           <h3> Dietary restrictions <br>
+                Vegetarian<input name="foodRestrictions" value="Vegetarian" type="checkbox"/><br>
+                Kosher<input name="foodRestrictions" value="Kosher" type="checkbox"/><br>
+                Strict <style="color:red;">RED</style> dripping blood meat<input name="foodRestrictions" value="RED_Meat" type="checkbox"/><br>
+                Lactose and nut-free<input name="foodRestrictions" value="Lactose&Nuts" type="checkbox"/><br>
+           </h3>
+           <h3><button id=formSubmit>Submit</button></h3>
+
+       </form>
+    </div>
+   
+    <script src="main.js"></script>
+</body>
+</html>
