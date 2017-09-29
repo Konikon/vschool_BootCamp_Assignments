@@ -1,6 +1,5 @@
-//document.travelForm.addEventListener("change", function(){
-//   
-//   
+//document.travelForm.addEventListener("submit", function(){
+//    event.preventDefault();
 //  console.log(document.travelForm.fName.value);
 //    console.log(document.travelForm.lName.value);
 //    console.log(document.travelForm.age.value);
@@ -20,12 +19,12 @@ document.travelForm.addEventListener("submit", function(event){
          dietListChecked.push(document.travelForm.foodRestrictions[i].value);
       }
 
-  alert(("First name:" + document.travelForm.fName.value + "\n" + 
-         "Last name: " + document.travelForm.lName.value + "\n"+ 
-         "Age: " + document.travelForm.age.value + "\n" + 
-         "Gender: " + document.travelForm.genderRadio.value + "\n" + 
-         "Location: " + document.travelForm.flyToLocatios.value + "\n" + 
-         "Dietary restrictions: " + dietListChecked ));
+  alert("First name:" + document.travelForm.fName.value + 
+         "\nLast name: " + document.travelForm.lName.value + "\nAge: " + document.travelForm.age.value + 
+         "\nGender: " + document.travelForm.genderRadio.value + "\nLocation: " + document.travelForm.flyToLocatios.value + "\nDietary restrictions: " + dietListChecked );
 
 });
 
+_____OR______
+
+alert(`$ `)

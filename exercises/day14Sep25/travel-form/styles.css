@@ -1,3 +1,11 @@
-.form-body{
-    padding: 5% 20% 5% 20%;
+
+.C{
+    height: 50px;
+    width:100%;   
+    background-color: wheat;
+}
+.D{
+    height: 50px;
+    width:100%; 
+    background-color: cornsilk;
 }
