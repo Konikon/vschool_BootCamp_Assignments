@@ -19,43 +19,40 @@ console.log("\n\nat any point in the game you can press \n\"print\" \nand you ca
 ////write functions
 //create constructor function for creating player name, starting healthpoints, and curios count.
 
-var Player(name, healthPoints, curiosCount, alive){
+function Player(name, healthPoints, curiosCount, alive) {
     this.name = playerName;
     this.healthPoints = 100;
     this.curiosCount = [];
-    this.alive = true;
+    this.alive = alive;
 }
 
-var player = new Player()
+var player = new Player(playerName)
 
 
-var Monster(name, mhealthpoints, curiosCount, alive){
+function Monster(name, mhealthpoints, alive) {
     this.name = monsterName;
-      this.healthPoints = 100;
-    this.curiosCount = [];
+    this.mHealthPoints = mhealthpoints;
     this.alive = true;
 }
 
-
-
-
-
-
-function playerReady(){
-   if(readline.keyInYN("So are you ready to start? ")) {
-      var player = 1;
-      var healthPointsPercentage = 100;
-      var curiosCount = [];
-       console.log(`healthPointsPercentage: ${healthPointsPercentage}
-curiosCount: ${curiosCount}`)
-//       return {
-//        healthPointsPercentage: healthPointsPercentage +"%", curiosCount: curiosCount;
-//       }
-      }else{
-      console.log("\n\n\n\nBYE!");
-      }
+function playerReady() {
+    if (readline.keyInYN("So are you ready to start? ")) {
+        var player = 1;
+        var healthPointsPercentage = 100;
+        var curiosCount = [];
+        console.log(`healthPointsPercentage: ${healthPointsPercentage}
+curiosCount: ${curiosCount}`);
+        
+      
+    } else {
+        console.log("\n\n\n\nBYE!");
+        return;
+    }
 };
 playerReady();
+walk();
+
+
 //function inventoryCount(){
 //    
 //}
@@ -67,29 +64,40 @@ playerReady();
 //
 //
 
-//function walk(){
-//
-//    console.log("please press \'w\' to continue walking");
-//    var walking = readline.question("press w :");
-//    if(walking !== "w"){
-//        console.log("please press \'w\' to continue walking")
-//    } else {    
-//        //    ask the user to press 'w' for walk
-////    use mathRandom for calcultion 
-//    var walkSenarios = Math.floor(Math.random() * (3 - 1) + 1);
-//    return walkSenarios;
-//}
-////};
+function walk() {
+    console.log("please press \'w\' to continue walking");
+    var walking = readline.question("press w :");
+    while (walking !== "w") {
+        console.log("please press \'w\' to continue walking")
+        var walking = readline.question("press w :");
+    } if (walking === "w"){
+        var walkSenarios = Math.floor(Math.random() * (3 - 1) + 1);
+        console.log(walkSenarios);
+    }
+    if(walkSenarios === 1){
+        console.log("Great! To keep on walking press w ")
+        var walking = readline.question("press w :");
+    }
+    if(walkSenarios === 2){
+        var enemyIs = enemyCreation(1, 3);
+        console.log("You are faced with" + enemyIs);
+        console.log("Do you want to fight? ");
+    }
+    
+    if(walkSenarios === 3){
+        var enemyIs = enemyCreation(1, 3);
+        console.log("you are attacked by" + enemyIs )
+        
+        var enemyIs = 
+    }
+};
 
-//
-//
-//function run(){
-//    var runResult = Math.floor(Math.random(0,1));
-//console.log(runResult);
-//}
-//run();
-//    return runResult;
-//}
+
+function run() {
+    var runResult = Math.floor(Math.random(0, 1));
+    return runResult;
+}
+
 //console.log(runResult);
 //
 //
@@ -122,22 +130,17 @@ playerReady();
 //}
 //
 //
-//function enemyCreation(min,max){
-//  var enemyNum = Math.floor(Math.random() * (max - min) + min);
-//    if(enemyNum === 1){
-//        var enemyIs = "Gogoligorth";
-//    }
-//    if(enemyNum === 2){
-//        var enemyIs = "Timur";
-//    }
-//    if(enemyNum === 3){
-//        var enemyIs = "Orraangjeb";
-//    }
-//    return enemyIs;
-//};
-//enemyCreation(3,1);
-//
-
-
-
+function enemyCreation(min, max) {
+    var enemyNum = Math.floor(Math.random() * (max - min) + min);
+    if (enemyNum === 1) {
+        var enemyIs = new Monster(Gogoligorth, 10);
+    }
+    if (enemyNum === 2) {
+        var enemyIs = new Monster(Timur, 20);
+    }
+    if (enemyNum === 3) {
+        var enemyIs = new Monster(Orraangjeb, 30);
+    }
+    return enemyIs;
+};
 
