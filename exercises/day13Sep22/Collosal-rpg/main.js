@@ -66,37 +66,40 @@ walk();
 
 function walk() {
     console.log("please press \'w\' to continue walking");
-    var walking = readline.question("press w :");
+    var walking = readline.question(playerName + "press w :");
     while (walking !== "w") {
-        console.log("please press \'w\' to continue walking")
+        console.log("please press \'w\' to continue walking");
         var walking = readline.question("press w :");
     } if (walking === "w"){
         var walkSenarios = Math.floor(Math.random() * (3 - 1) + 1);
         console.log(walkSenarios);
     }
     if(walkSenarios === 1){
-        console.log("Great! To keep on walking press w ")
+        console.log("Great! To keep on walking press w ");
         var walking = readline.question("press w :");
     }
     if(walkSenarios === 2){
         var enemyIs = enemyCreation(1, 3);
-        console.log("You are faced with" + enemyIs);
-        console.log("Do you want to fight? ");
+        console.log("You are faced with " + enemyIs);
+        fightOrFlight= ["Run", "Fight"];
+        index = readlineSync.keyInSelect(fightOrFlight,"Do you want to fight or run ?");
+        
+        
+        
     }
     
     if(walkSenarios === 3){
         var enemyIs = enemyCreation(1, 3);
         console.log("you are attacked by" + enemyIs )
         
-        var enemyIs = 
-    }
+//        var enemyIs = 
 };
 
 
 function run() {
     var runResult = Math.floor(Math.random(0, 1));
     return runResult;
-}
+};
 
 //console.log(runResult);
 //
@@ -109,19 +112,22 @@ function run() {
 //
 //
 //
-//function attackEnemy(enemy){
-//    
-//}
+function attackEnemy(enemy){
+    var attackForce = Math.floor(Math.random(0, 1));
+    return attackForce;
+}
 //
 //
-//function enemyAttack(){
-//    
-//}
+function enemyAttack(){
+    var eAttackForce = Math.floor(Math.random(0, 1));
+    return eAttackForce;
+}
 //
+//the idea is that if the enemy attack force eAttackForce > attackForce then you die else you get a prize, your HP increase and you are asked for another round of play.
 //
-//function die(){
-//    
-//}
+function die(){
+return "you are  D E A D :( ";    
+}
 //
 //
 //function enemyDie(){
