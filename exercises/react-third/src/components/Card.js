@@ -4,8 +4,8 @@ function Card(props){
   return(
     <div className="card">
       <div >
-        Hello, I am {props.name}
-        <img className="imgstyle" src={props.imgEle}/>
+        <img className="imgstyle" src={props.imgEle} alt="animal images"/><br/>
+        Hello, I am {props.name}<br/>
         {props.contactNo}
         </div>
 
