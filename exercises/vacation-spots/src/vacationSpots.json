@@ -1,0 +1,41 @@
+ [
+  {
+    "place": "Ulaanbaatar",
+    "country": "Mongolia",
+    "price": "$1500",
+    "timeToGo": "Spring",
+    "img": "https://static1.squarespace.com/static/5211ea7be4b0dc073863aa10/t/56166b7be4b0c10192a36d01/1444309900497/"
+
+  },{
+    "place": "Mt. Rushmore",
+    "country": "USA",
+    "price": "$200",
+    "timeToGo": "Summer",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/10/Mount_Rushmore_National_Memorial.jpg"
+  },{
+    "place": "Kathmandu",
+    "country": "Nepal",
+    "price": "$1200",
+    "timeToGo": "Winter",
+    "img": "http://suggestnepal.com/wp-content/uploads/2014/08/Nepal_Culture_Kathmandu_square.jpg"
+  },{
+    "place": "Kiev",
+    "country": "Ukraine",
+    "price": "$1100",
+    "timeToGo": "Summer",
+    "img":"http://www.bestourism.com/img/items/big/1353/Kiev-Pechersk-Lavra_Beautiful-landscape_5345.jpg"
+  },{
+    "place": "Pyongyang",
+    "country":"N. Korea",
+    "price": "$90",
+    "timeToGo": "Spring",
+    "img": "http://i2.cdn.cnn.com/cnnnext/dam/assets/160809091147-pyongyang5-super-169.jpeg"
+
+  },{
+    "place": "Akshardhaam",
+    "country":"India",
+    "price": "$1200",
+    "timeToGo": "Fall",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/03/7e/35/fb/swaminarayan-akshardham.jpg"
+  }
+]
