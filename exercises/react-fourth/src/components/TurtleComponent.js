@@ -2,7 +2,7 @@ import React from "react";
 
 function TurtleComponent(props){
   return(
-    <div className="container">
+    <div className="container" >
       <h1 className="title">Name {props.turtle.name}</h1>
       <h3 className="nickName">Nick Name {props.turtle.nickName}</h3>
       <h3 className="weapon">Weapon {props.turtle.weapon}</h3>
@@ -10,6 +10,5 @@ function TurtleComponent(props){
     </div>
   )
 }
-
 
 export default TurtleComponent;
