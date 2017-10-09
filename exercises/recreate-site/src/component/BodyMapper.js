@@ -3,7 +3,7 @@ import BodyComponent from "./BodyComponent";
 import BodyArray from "../bodyText.json"
 
 
-function BodyMapper(props){
+function BodyMapper(){
     return BodyArray.map((post, index)=><BodyComponent post={post}/>)
 }
 

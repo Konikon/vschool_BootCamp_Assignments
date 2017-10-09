@@ -1,0 +1,13 @@
+.SH_box{
+  height:200px;
+  width:200px;
+  background-color: lightgrey;
+  display: inline-block;
+  border: 1px solid black;
+  font-style: "Comic Sans MS", cursive, sans-serif;
+}
+
+.photo{
+  width: 100px;
+  height: 100px;
+}
