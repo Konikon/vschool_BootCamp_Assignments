@@ -1,0 +1,26 @@
+[
+  {
+    "link": 1,
+    "h2text": "Man must explore, and this is exploration at its greatest",
+    "h3text": "Problems look mighty small from 150 miles up",
+    "ptext": "Posted by Start Bootstrap on September 24, 2017"
+  },
+  {
+    "link": 2,
+    "h2text":"I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.",
+    "h3text":"",
+    "ptext":"Posted by Start Bootstrap on September 18, 2017"
+  },
+  {
+    "link": 3,
+    "h2text": "Science has not yet mastered prophecy",
+    "h3text":"We predict too much for the next year and yet far too little for the next ten.",
+    "ptext":"Posted by Start Bootstrap on August 24, 2017"
+  },
+  {
+    "link": 4,
+    "h2text":"Failure is not an option",
+    "h3text":"Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
+    "ptext":"Posted by Start Bootstrap on July 8, 2017"
+  }
+]

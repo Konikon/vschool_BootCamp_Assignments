@@ -1,8 +1,10 @@
 import React from "react";
+import BodyMapper from "./BodyMapper";
 
 function Body(){
   return(
-    <div>
+    <div className="bodyLinks">
+    <BodyMapper />
     </div>
   )
 }
