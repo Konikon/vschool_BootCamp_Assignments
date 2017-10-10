@@ -1,13 +1,16 @@
 .SH_box{
   height:200px;
   width:200px;
-  background-color: lightgrey;
+  background-color: Gainsboro;
   display: inline-block;
-  border: 1px solid black;
-  font-style: "Comic Sans MS", cursive, sans-serif;
+  border: 3px ridge;
+  text-align: center;
+  padding: 5%;
+  margin: 5px;
+
 }
 
 .photo{
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 50%;
 }
