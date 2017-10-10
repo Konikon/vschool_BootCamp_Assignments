@@ -1,12 +1,12 @@
 import React from "react";
-import SH_Array from "../SH_List.json";
-import SH_Component from "./SH_Component"
+import Sh_Array from "../Sh_List.json";
+import Sh_Component from "./Sh_Component"
 
 
-function SH_Mapper(){
+function Sh_Mapper(){
   return(
     <div>
-    {SH_Array.map((hero, index)=> <SH_Component hero={hero} key={hero.name + index}/>)}
+    {Sh_Array.map((hero, index)=> <Sh_Component hero={hero} key={hero.name + index}/>)}
     </div>
   )}
-export default SH_Mapper;
+export default Sh_Mapper;

@@ -4,6 +4,7 @@
   background-color: Gainsboro;
   display: inline-block;
   border: 3px ridge;
+  border-radius: 10px;
   text-align: center;
   padding: 5%;
   margin: 5px;
