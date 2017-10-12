@@ -1,0 +1,44 @@
+.theGodfather{
+background-image: url("https://i.pinimg.com/736x/16/09/d8/1609d8af9f0124dd197ffababa5be519--the-godfather--tv-movie.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.container{
+  width:200px;
+  height: 300px;
+  border: 5px double #403F3F;
+  background-color: #402F23;
+  display: inline-block;
+  margin: 10px;
+}
+
+.mugshot{
+  width: 200px;
+  height: 200px;
+}
+
+.photo1{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+}
+
+.photo2{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.name{
+  text-align: center;
+}
+
+.name h2{
+  color: #590B02;
+}
+.name h3{
+  color: #B58643;
+}
