@@ -21,7 +21,7 @@ class App extends React.Component{
     render (){
         return(
             <div>
-                
+
                 <ColorComponent col={this.state.rung} />
             </div>
       )
