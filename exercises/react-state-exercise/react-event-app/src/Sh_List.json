@@ -16,17 +16,23 @@
   },
   {
     "name": "Spiderman",
-    "image": "https://i.pinimg.com/736x/7e/2a/88/7e2a88a9108ff1cd2161783cbf8a9bf9--spiderman-tattoo-marvel-tattoos.jpg",
+    "image": "http://www.toyzany.com/media/catalog/product/0/2/0223-ups.jpg",
     "catchPhrase": "I'm stuck upside down"
   },
-  {
-    "name": "Wonder Woman",
-    "image": "https://i.pinimg.com/736x/97/66/74/9766745ee2b70fef554da361c247bbee--superman-party-art-designs.jpg",
-    "catchPhrase": "Hey! stay away"
-  },
+
   {
     "name": "Flash",
     "image": "https://i.pinimg.com/736x/c9/b0/1f/c9b01fa47cb4ea882363db5a9b17e19a--kid-flash-lightning-bolt.jpg",
     "catchPhrase": "Wroom"
+  },
+  {
+    "name": "He-Man",
+    "image": "https://newevolutiondesigns.com/images/inspiration/he-man-kid-hero.jpg",
+    "catchPhrase": "By the power of Grayskull"
+  },
+  {
+    "name": "Hulk",
+    "image": "https://i.pinimg.com/736x/5d/93/33/5d9333b44cda83e90f6a8ab34ac89317--hulk-esmaga-hulk-comic.jpg",
+    "catchPhrase": "Don't make me angry… You wouldn't like me when I'm angry"
   }
 ]

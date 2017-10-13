@@ -15,6 +15,8 @@ function ListRenderer(props){
                      name="description"
                      onChange={props.handleChange}/>
 
+              <button onClick={()=>props.postList({props.listPopulate})}>Submit</button>
+
               <h1>Title: {props.listPopulate.title}</h1>
               <h3>Description: {props.listPopulate.description}</h3>
               <button onClick={()=>props.handleClick(props.listPopulate._id)}> Delete </button>

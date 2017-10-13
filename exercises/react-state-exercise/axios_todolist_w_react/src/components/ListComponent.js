@@ -14,6 +14,7 @@ class ListComponent extends React.Component{
         }
         this.handleClick = this.handleClick.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.postList= this.postList.bind(this);
       }
 
     componentDidMount(){
@@ -24,10 +25,28 @@ class ListComponent extends React.Component{
             })
         }
 
+    postList(event){
+        axios.post('https://api.vschool.io/mak/todo/${this.state.newList}').then(
+          response=>{
+              this.state(prevState=>{
+                    return{
+                        listStuff: [...prevState.listStuff, response.data]
+                    }
+              })
+          })
+
+    }
+
     handleChange(event){
-        this.setState ({
-            [...title]
-        })
+        event.persist();
+        this.setState (prevState=>{
+            return{
+              newList: {
+                ...prevState.newList,
+                [event.target.name]: event.target.value
+              }
+          }
+        });
     }
 
     handleClick(id){
@@ -51,6 +70,8 @@ class ListComponent extends React.Component{
                 valueTitle={this.state.newList.title}
                 valueDescription={this.state.newList.description}
                 handleChange={this.handleChange}
+                postList={this.postList}
+
                </div>
                 this.state.listStuff.map((stuff, i)=>{
                     return(
