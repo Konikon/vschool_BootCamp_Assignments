@@ -21,7 +21,6 @@ class ListComponent extends React.Component{
 
     componentDidMount(){
         axios.get("https://api.vschool.io/mak/todo").then(response=>{
-          console.log(response.data);
           this.setState({
                 listStuff: response.data.reverse()
           })
@@ -37,7 +36,11 @@ class ListComponent extends React.Component{
             response=>{
                 this.setState(prevState=>{
                       return{
-                          listStuff: [response.data, ...prevState.listStuff]
+                          listStuff: [response.data, ...prevState.listStuff],
+                          newList: {
+                            title: "",
+                            description: ""
+                          }
                       }
                 })
             })
