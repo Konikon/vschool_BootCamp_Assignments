@@ -1,6 +1,8 @@
 import React from "react";
-import ListRenderer from "./ListRenderer";
+import TodoList from "./TodoList";
 import axios from "axios";
+import TodoForm from "./TodoForm";
+
 
 class ListComponent extends React.Component{
     constructor() {
@@ -15,26 +17,31 @@ class ListComponent extends React.Component{
         this.handleClick = this.handleClick.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.postList= this.postList.bind(this);
-      }
+    }
 
     componentDidMount(){
         axios.get("https://api.vschool.io/mak/todo").then(response=>{
-          this.setState ({
-                listStuff: response.data
+          console.log(response.data);
+          this.setState({
+                listStuff: response.data.reverse()
+          })
+        })
+    }
+
+    postList(event){
+      event.preventDefault();
+      if (this.state.newList.title === ""){
+          alert("you have to provide a title to your todo")
+          } else {
+          axios.post('https://api.vschool.io/mak/todo/', this.state.newList).then(
+            response=>{
+                this.setState(prevState=>{
+                      return{
+                          listStuff: [response.data, ...prevState.listStuff]
+                      }
                 })
             })
         }
-
-    postList(event){
-        axios.post('https://api.vschool.io/mak/todo/${this.state.newList}').then(
-          response=>{
-              this.state(prevState=>{
-                    return{
-                        listStuff: [...prevState.listStuff, response.data]
-                    }
-              })
-          })
-
     }
 
     handleChange(event){
@@ -53,33 +60,37 @@ class ListComponent extends React.Component{
         axios.delete(`https://api.vschool.io/mak/todo/${id}`).then(response=>
             this.setState ((prevState) =>{
                 let deletedItemArray = prevState.listStuff.filter((dItem)=>{
-                    return dItem._id != id;
+                    return dItem._id !== id;
                   })
-                        return {
-                          listStuff: deletedItemArray
-                        }
-                      })
-                    )
-                  }
+                      return {
+                        listStuff: deletedItemArray
+                      }
+                    })
+                )
+            }
 
 
     render(){
       return(
           <div>
               <div>
-                valueTitle={this.state.newList.title}
-                valueDescription={this.state.newList.description}
-                handleChange={this.handleChange}
-                postList={this.postList}
+                <TodoForm
+                    valueTitle={this.state.newList.title}
+                    valueDescription={this.state.newList.description}
+                    handleChange={this.handleChange}
+                    postList={this.postList}
+                  />
 
                </div>
-                this.state.listStuff.map((stuff, i)=>{
+                {this.state.listStuff.map((stuff, i)=>{
                     return(
-                      <div key ={stuff.title + i}>
-                      <ListRenderer listPopulate = {stuff}
-                                    handleClick={this.handleClick}/>
-                      </div>)
-                )}
+                        <div key ={stuff.title + i}>
+                              <TodoList listPopulate = {stuff}
+                                            handleClick={this.handleClick}/>
+                        </div>
+                        )
+                      }
+                  )}
           </div>
             )
           }
