@@ -14,9 +14,10 @@ class ListComponent extends React.Component{
               description: ""
           }
         }
-        this.handleClick = this.handleClick.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.postList= this.postList.bind(this);
+        this.postList = this.postList.bind(this);
+        this.editList = this.editList.bind(this);
     }
 
     componentDidMount(){
@@ -59,7 +60,7 @@ class ListComponent extends React.Component{
         });
     }
 
-    handleClick(id){
+  handleDelete(id){
         axios.delete(`https://api.vschool.io/mak/todo/${id}`).then(response=>
             this.setState ((prevState) =>{
                 let deletedItemArray = prevState.listStuff.filter((dItem)=>{
@@ -72,31 +73,50 @@ class ListComponent extends React.Component{
                 )
             }
 
+  editList(editedTodo, id){
+      axios.put(`https://api.vschool.io/mak/todo/${id}`, editedTodo)
+      .then(response=>{
+          let newEdit = response.data;
+          this.setState(prevState=>{
+              const newList = prevState.listStuff.map(stuff=>{
+                    if(stuff._id === id){
+                        return newEdit
+                    } else {
+                        return stuff;
+                    }
+              })
+              return {
+                  ...prevState,
+                  listStuff: newList
+              }
+          })
+      })
+    }
 
-    render(){
-      return(
-          <div>
-              <div>
-                <TodoForm
-                    valueTitle={this.state.newList.title}
-                    valueDescription={this.state.newList.description}
-                    handleChange={this.handleChange}
-                    postList={this.postList}
-                  />
+  render(){
+    return(
+        <div>
+            <div>
+              <TodoForm
+                  valueTitle={this.state.newList.title}
+                  valueDescription={this.state.newList.description}
+                  handleChange={this.handleChange}
+                  postList={this.postList}
+                />
 
-               </div>
-                {this.state.listStuff.map((stuff, i)=>{
-                    return(
-                        <div key ={stuff.title + i}>
-                              <TodoList listPopulate = {stuff}
-                                            handleClick={this.handleClick}/>
-                        </div>
-                        )
-                      }
-                  )}
-          </div>
-            )
-          }
+             </div>
+              {this.state.listStuff.map((stuff, i)=>{
+                  return(
+                      <div key ={stuff.title + i}>
+                            <TodoList listPopulate = {stuff}
+                                          handleClick={this.handleDelete}/>
+                      </div>
+                      )
+                    }
+                )}
+        </div>
+          )
+        }
 }
 
 

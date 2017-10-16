@@ -7,12 +7,13 @@ function ListRenderer(props){
             <h1>Title: {props.listPopulate.title}</h1>
             <h3>Description: {props.listPopulate.description}</h3>
 
-            <form onSubmit>
+            <form onSubmit={props.postList}>
                 <FormControl type="text"
                        placeholder="Edit list title"
                        value={props.valueDescription}
                        name="title"
                        onChange={props.handleChange}/>
+
                  <FormControl type="text"
                         placeholder="Edit list description"
                         value={props.valueDescription}
@@ -21,14 +22,17 @@ function ListRenderer(props){
             </form>
 
 
-            <Button onClick
-                    bsStyle="success"
-                    className="paintButt"> Edit </Button>
+                  <Button onClick = {props.handleEdit}
+                      bsStyle="warning"
+                      className="paintButt"> Edit </Button>
 
-            <Button onClick={()=>props.handleClick(props.listPopulate._id)}
-                    bsStyle="warning"
-                    className="paintButt"> Delete </Button>
-                    <hr/>
+                  <Button onClick = {props.handleSubmit}
+                      className="paintButt"> submit </Button>
+
+                  <Button onClick={()=>props.handleDelete(props.listPopulate._id)}
+                      bsStyle="success"
+                      className="paintButt"> Delete </Button>
+                      <hr/>
         </div>
     )
 }
