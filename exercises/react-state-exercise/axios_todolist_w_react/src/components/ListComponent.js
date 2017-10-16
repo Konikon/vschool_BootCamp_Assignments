@@ -109,7 +109,7 @@ class ListComponent extends React.Component{
                   return(
                       <div key ={stuff.title + i}>
                             <TodoList listPopulate = {stuff}
-                                          handleClick={this.handleDelete}/>
+                                      handleDelete={this.handleDelete}/>
                       </div>
                       )
                     }

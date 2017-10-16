@@ -1,24 +1,24 @@
 import React from "react";
 import { Row, Col, Button, FormControl, FormGroup } from "react-bootstrap";
 
-function ListRenderer(props){
+function TodoList(props){
     return(
         <div>
             <h1>Title: {props.listPopulate.title}</h1>
             <h3>Description: {props.listPopulate.description}</h3>
 
-            <form onSubmit={props.postList}>
+            <form onSubmit={props.handleSubmit}>
                 <FormControl type="text"
                        placeholder="Edit list title"
-                       value={props.valueDescription}
+                       value={props.eidtedTodo.title}
                        name="title"
-                       onChange={props.handleChange}/>
+                       onChange={props.handleEdit}/>
 
                  <FormControl type="text"
                         placeholder="Edit list description"
-                        value={props.valueDescription}
+                        value={props.eidtedTodo.description}
                         name="description"
-                        onChange={props.handleChange}/>
+                        onChange={props.handleEdit}/>
             </form>
 
 
@@ -37,4 +37,4 @@ function ListRenderer(props){
     )
 }
 
-export default ListRenderer;
+export default TodoList;

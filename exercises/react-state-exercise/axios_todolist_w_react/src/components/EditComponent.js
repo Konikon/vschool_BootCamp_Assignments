@@ -6,11 +6,12 @@ class EditComponent extends React.Component {
     super(props); //this will too
     this.state ={
       editList: {
-        eidtedTodo: props.,
-        description: ""
+        title: props.listPopulate.title,
+        description: props.listPopulate.description
       }
     }
     this.handleEdit = this.handleEdit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleEdit(event){
@@ -27,7 +28,7 @@ class EditComponent extends React.Component {
 
   handleSubmit(event){
     event.preventDefault();
-    this.props.editList(this.state.editList, this.props.stuff)
+    this.props.editList(this.state.editList, this.props.listPopulate._id,)
   }
 
 
@@ -35,9 +36,10 @@ class EditComponent extends React.Component {
     return(
       <TodoList
           listPopulate = {this.props.listPopulate}
-          editedList = {this.props.editedList}
-          handleEdit = {this.props.handleEdit}
-          handleSubmit = {this.props.handleSubmit}
+          handleDelete = {this.props.handleDelete}
+          editedList = {this.props.editList}
+          handleEdit = {this.handleEdit}
+          handleSubmit = {this.handleSubmit}
           />
         )
       }

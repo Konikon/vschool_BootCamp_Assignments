@@ -1,0 +1,20 @@
+.app-wrapper{
+  height: 100vh;
+
+}
+
+.nav{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background: lightgrey;
+  padding: 20px;
+  border-radius: 30%;
+  border: darkgrey 20px solid;
+}
+
+.body{
+  background: cornsilk;
+  
+}
