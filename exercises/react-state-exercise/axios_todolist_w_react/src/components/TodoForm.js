@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, FormControl, FormGroup } from "react-bootstrap";
+import { Button, FormControl, FormGroup } from "react-bootstrap";
 
 function TodoForm(props) {
     return(

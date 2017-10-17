@@ -34,10 +34,11 @@ class EditComponent extends React.Component {
 
   render(){
     return(
+      console.log(this.state.editList)
       <TodoList
-          listPopulate = {this.props.listPopulate}
+          listPopulate = {this.state.listPopulate}
           handleDelete = {this.props.handleDelete}
-          editedList = {this.props.editList}
+          editedList = {this.state.editList}
           handleEdit = {this.handleEdit}
           handleSubmit = {this.handleSubmit}
           />

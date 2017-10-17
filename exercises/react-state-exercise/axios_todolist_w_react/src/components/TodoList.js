@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, FormControl, FormGroup } from "react-bootstrap";
+import { FormControl, Button } from "react-bootstrap";
 
 function TodoList(props){
     return(
@@ -10,13 +10,13 @@ function TodoList(props){
             <form onSubmit={props.handleSubmit}>
                 <FormControl type="text"
                        placeholder="Edit list title"
-                       value={props.eidtedTodo.title}
+                       value={props.eidtedList.title}
                        name="title"
                        onChange={props.handleEdit}/>
 
                  <FormControl type="text"
                         placeholder="Edit list description"
-                        value={props.eidtedTodo.description}
+                        value={props.eidtedList.description}
                         name="description"
                         onChange={props.handleEdit}/>
             </form>
@@ -27,7 +27,7 @@ function TodoList(props){
                       className="paintButt"> Edit </Button>
 
                   <Button onClick = {props.handleSubmit}
-                      className="paintButt"> submit </Button>
+                      className="paintButt"> Submit </Button>
 
                   <Button onClick={()=>props.handleDelete(props.listPopulate._id)}
                       bsStyle="success"

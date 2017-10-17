@@ -64,7 +64,8 @@ class TodoList extends React.Component {
     }
 
    editTodo(id, editedTodo){
-        axios.put(`https://api.vschool.io/ericnatejones/todo/${id}`, editedTodo).then((response)=>{
+        axios.put(`https://api.vschool.io/ericnatejones/todo/${id}`, editedTodo).
+        then((response)=>{
             let newEdit = response.data;
             this.setState((prevState)=>{
                 const newTodos = prevState.todos.map((todo)=>{

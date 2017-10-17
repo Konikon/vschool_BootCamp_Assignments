@@ -4,6 +4,7 @@ import axios from "axios";
 import TodoForm from "./TodoForm";
 
 
+
 class ListComponent extends React.Component{
     constructor() {
         super();
@@ -106,10 +107,12 @@ class ListComponent extends React.Component{
 
              </div>
               {this.state.listStuff.map((stuff, i)=>{
+                console.log(stuff);
                   return(
                       <div key ={stuff.title + i}>
                             <TodoList listPopulate = {stuff}
-                                      handleDelete={this.handleDelete}/>
+                                      handleDelete={this.handleDelete}
+                                      />
                       </div>
                       )
                     }

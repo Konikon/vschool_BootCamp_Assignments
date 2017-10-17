@@ -1,10 +1,10 @@
 import React from "react";
-import ListComponent from "./ListComponent"
+import TodoListComponent from "./Component";
 
 function App(){
     return(
-        <ListComponent />
+      <TodoListComponent />
     )
- }
+}
 
 export default App;
