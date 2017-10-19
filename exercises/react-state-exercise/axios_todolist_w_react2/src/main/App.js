@@ -1,9 +1,9 @@
 import React from "react";
-import TodoListComponent from "./Component";
+import TodoList from "./Container";
 
 function App(){
     return(
-      <TodoListComponent />
+      <TodoList />
     )
 }
 
