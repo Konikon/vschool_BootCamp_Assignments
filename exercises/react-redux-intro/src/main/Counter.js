@@ -28,7 +28,7 @@ const sty1 = {
               <button style={sty1} onClick={props.minusOne}> - </button>
               <span> {props.counter} </span>
               <button style={sty1} onClick={props.addOne}> + </button>
-              <button style={sty1} onClick={props.square}>  </button>
+              <button style={sty1} onClick={props.square}> ^2 </button>
           </div>
           <div>
               <button style={sty1} onClick={props.reset}> Reset </button>
