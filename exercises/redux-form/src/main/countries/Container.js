@@ -43,3 +43,21 @@ const mapStateToProps = (state)=>{
 //add delete function to each country component
 
 export default connect(mapStateToProps, {})(CountriesContainer);
+
+//this is what happening with connect under the hood
+//const mapStateToProps = (state) => {
+//     return {countries: state.countries}
+// }
+// CountriesContainer = connect(mapStateToProps, {})(CountriesContainer);
+// export default CountriesContainer;
+//
+// let connect = function(callback1, obj){
+//     let state = callback1(prevState);
+//     let props = {...obj, ...state};
+//
+//     return function(ReactComponent){
+//         return (
+//             <ReactComponent {...props}/>
+//         )
+//     }
+// }

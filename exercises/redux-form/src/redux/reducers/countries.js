@@ -1,9 +1,9 @@
-export function countries (prevCountries = [], action){
+export function countries ( prevCountries = [], action){
   let newCountries = [...prevCountries];
     switch(action.type){
         case "ADD_COUNTRY":
         newCountries.push(action.country);
-            return newCountries
+            return newCountries;
 
         case "DELETE_COUNTRY":
         newCountries.splice(action.index,1);
