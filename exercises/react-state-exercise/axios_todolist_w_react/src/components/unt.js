@@ -233,10 +233,24 @@ function TodoItem(props) {
             <button onClick={props.handleToggle}>Edit</button>
             <div className={props.toggleDisplay ? "show" : "hide"}>
                 <form onSubmit={props.handleSubmit}>
-                    <input onChange={props.handleEdit} value={props.editedTodo.title} name="title"type="text"placeholder="Edit Title"/>
-                    <input onChange={props.handleEdit} value={props.editedTodo.description} name="description"type="text"placeholder="Edit Description"/>
+                    <input onChange={props.handleEdit}
+                      value={props.editedTodo.title}
+                      name="title"t
+                      ype="text"
+                      placeholder="Edit Title"/>
+
+                    <input onChange={props.handleEdit}
+                      value={props.editedTodo.description}
+                      name="description"
+                      type="text"
+                      placeholder="Edit Description"/>
+
                     <label>Completed</label>
-                    <input onChange={props.handleEdit}type="checkbox" checked={props.editedTodo.completed} name="completed"/>
+                    <input onChange={props.handleEdit}
+                      type="checkbox"
+                      checked={props.editedTodo.completed}
+                      name="completed"/>
+
                     <button type="submit">Save</button>
                 </form>
             </div>

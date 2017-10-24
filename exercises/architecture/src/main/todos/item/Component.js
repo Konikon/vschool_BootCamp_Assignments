@@ -9,10 +9,25 @@ function ItemComponent(props){
             <p>{props.todo.description}</p>
             <button onClick={()=>props.handleDelete(props.todo._id)}>X</button>
             <label>Completed: </label>
-            <input onChange={props.handleChange}checked={props.inputs.completed} name="completed"type="checkbox"/>
+
+            <input onChange={props.handleChange}
+              checked={props.inputs.completed}
+              name="completed"
+              type="checkbox"/>
+
             <form onSubmit={props.handleSave}>
-                <input onChange={props.handleChange}value={props.inputs.title} name="title"type="text"placeholder="Edit Title"/>
-                <input onChange={props.handleChange}value={props.inputs.description} name="description"type="text"placeholder="Edit Description"/>
+                <input onChange={props.handleChange}
+                  value={props.inputs.title}
+                  name="title"
+                  type="text"
+                  placeholder="Edit Title"/>
+
+                <input onChange={props.handleChange}
+                  value={props.inputs.description} n
+                  ame="description"
+                  type="text"
+                  placeholder="Edit Description"/>
+
                 <button>Save</button>
             </form>
         </div>

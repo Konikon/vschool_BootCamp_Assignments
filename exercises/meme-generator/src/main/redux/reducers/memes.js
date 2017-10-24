@@ -1,6 +1,6 @@
 let defaultMemes = [];
 
-export default memes = function(prevMemes = defaultMemes, action){
+export const memes = function(prevMemes = defaultMemes, action){
   switch(action.type){
     case "ADD_MEME":
     defaultMemes.push(action.meme);
@@ -11,6 +11,6 @@ export default memes = function(prevMemes = defaultMemes, action){
         return defaultMemes;
 
     default:
-        return defaultMemes;
+        return prevMemes;
   }
 }
