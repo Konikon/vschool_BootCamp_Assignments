@@ -5,7 +5,7 @@ export function loadTodo() {
     return (dispatch) => {
         axios.get(todosUrl).then((response) => {
             dispatch({type: "LOAD_TODO",
-            todos: response.data})
+            todos: response.data.reverse()})
         }).catch((err) => {
             console.log(err);
         })

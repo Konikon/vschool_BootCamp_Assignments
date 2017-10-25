@@ -6,7 +6,7 @@ export const todos = function(prevTodos = defaultTodos, action){
           return action.todos;
 
       case "ADD_TODO":
-          newTodos.push(action.todo);
+          newTodos.unshift(action.todo);
           return newTodos;
 
       case "DELETE_TODO":
