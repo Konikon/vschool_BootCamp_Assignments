@@ -3,12 +3,15 @@ const app = express();
 const bodyParser = require("body-parser");
 const uuid = require("uuid/v4");
 
-let bounty = []
-
 app.use(bodyParser.json());
 
+const cors = require("cors");
+app.use(cors());
+
+let bounty = []
+
+
 app.get("/bounty", (req, res) => {
-  //filter the response based on hte query object
   let bountyF = bounty.filter((bount) => {
     for (let key in req.query) {
       if (String(bount[key]) !== req.query[key]) {
@@ -20,9 +23,6 @@ app.get("/bounty", (req, res) => {
   return res.send(bountyF);
 })
 
-//loop through bounty and return only those that match
-//property value
-
 
 app.post("/bounty", (req, res) => {
   req.body._id = uuid()
@@ -32,18 +32,15 @@ app.post("/bounty", (req, res) => {
 
 app.delete("/bounty/:id", (req, res) => {
   console.log(req.params);
-  //with the id, find object in database and remove it
   bounty = bounty.filter((bount) => {
     return bount._id !== req.params.id
   });
-  //send back confirmation
   res.send({
     message: "ITEM REMMOVED SUCCESSFULLY"
   })
 });
 
 app.put("/bounty/:id", (req, res) => {
-  // with the id, find object in database, ad replace it with req.body
   let newBount = req.body
   bounty = bounty.map((bount) => {
     if (bount._id === req.params.id) {
@@ -54,20 +51,6 @@ app.put("/bounty/:id", (req, res) => {
   });
   res.send(newBount);
 })
-
-
-// app.get("/bounty/:id", (req, res)=>{
-//     //find object with matching id and res.send the object
-//     // return bounty.filter((bount)=>{
-//     //   for(let key in req.query)
-//     //   if(bount[key] !== req.query[key]){
-//     //     return false;
-//     //   } else {
-//     //     return true;
-//     //   }
-//     // })
-//     }
-
 
 
 app.listen(8000, () => {
