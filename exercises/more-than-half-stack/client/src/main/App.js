@@ -1,13 +1,15 @@
 import React from "react";
-// import AddFormContainer from "./"
-// import BountiesContainer from "./"
+import AddFormContainer from "./add-form/Container";
+import BountiesComponent from "./Component";
+
 
 function App(){
     return(
         <div>
-            <h1>HI!!!!</h1>
-            // <AddFormContainer />
-            // <BountiesContainer />
+            <h1>Welcome to the Intergalctic Bounty Hunter!!!!</h1>
+            <AddFormContainer />
+            <BountiesComponent />
+
         </div>
   )
 }

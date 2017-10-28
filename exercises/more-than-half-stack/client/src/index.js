@@ -8,9 +8,10 @@ import reducer from "./redux/reducers";
 
 import App from "./main/App";
 
-// const store = createStore(reducer, applyMiddleware(thunk));
-// store.subscribe(()=>{
-//     console.log(store.getState());
-//   })
+const store = createStore(reducer, applyMiddleware(thunk));
+store.subscribe(()=>{
+    console.log(store.getState());
+  })
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(<Provider store={store}><App/></Provider>,
+  document.getElementById("root"));
