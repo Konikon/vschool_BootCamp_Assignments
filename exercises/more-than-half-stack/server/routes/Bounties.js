@@ -15,9 +15,7 @@ Bounties.get("/", (req, res) => {
   return res.send(bountyF);
 })
 
-
 Bounties.post("/", (req, res) => {
-  res.send(req.body)
   req.body._id = uuid()
   bounty.push(req.body)
   res.send(bounty[bounty.length - 1]);

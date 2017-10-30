@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const uuid = require("uuid/v4");
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8010;
 const morgan = require("morgan");
 
 const bountiesRoutes = require("./routes/bounties")
