@@ -9,12 +9,14 @@ function AddFormComponent(props){
                 <input type="text"
                       name= "name"
                       placeholder="Add Name"
+                      value={}
                       onChange={props.handleChange}/>
 
                 <input type="number"
                       min="1"
                       name= "amount"
                       placeholder="bounty amount"
+                      value={}
                       onChange={props.handleChange}/>QUIDS
 
                 <input type="text"

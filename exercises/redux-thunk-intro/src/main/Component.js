@@ -21,7 +21,6 @@ class TodosComponent extends React.Component{
                 key = {todo.title + index}
                 todo = {todo}
                 index ={index}
-
               />
           )
         })

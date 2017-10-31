@@ -4,8 +4,10 @@ const todosUrl = "https://api.vschool.io/mak/todo/";
 export function loadTodo() {
     return (dispatch) => {
         axios.get(todosUrl).then((response) => {
-            dispatch({type: "LOAD_TODO",
-            todos: response.data.reverse()})
+            dispatch({
+              type: "LOAD_TODO",
+            todos: response.data.reverse()
+          })
         }).catch((err) => {
             console.log(err);
         })

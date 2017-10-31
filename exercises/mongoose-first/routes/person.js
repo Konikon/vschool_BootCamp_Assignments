@@ -4,11 +4,10 @@ const Person = require("../models/person");
 
 personRoutes.get("/", (req,res)=>{
   //getting the persons arry from the database
-  Person.find(req.query,(err, people)=>{
+  Person.find(req.query,(err, people)=>{ //req.query searches for any query if present
       if(err) return res.status(400).send(err);
       return res.status(201).send(people);
   })
-
 })
 
 personRoutes.get("/:id", (req, res)=>{
@@ -36,9 +35,9 @@ personRoutes.delete("/:id", (req, res)=>{
 })
 
 personRoutes.put("/:id", (req, res)=>{
-  Person.findByIdAndUpdate(req.params.id, req.body, {new:true},(err, person)=>{
+  Person.findByIdAndUpdate(req.params.id, req.body, {new:true},(err, updatedPerson)=>{
     if(err) return res.status(400).send(err);
-    return res.send(person);
+    return res.send(updatedPerson);
   });
 });
 
