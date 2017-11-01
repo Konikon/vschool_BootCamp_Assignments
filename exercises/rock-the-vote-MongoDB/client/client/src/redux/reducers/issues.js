@@ -9,6 +9,15 @@ export const issues = function(prevIssues = defaultIssues, action){
           newIssues.unshift(action.issue)
           return newIssues;
 
+      case "EDIT_ISSUE":
+        return newIssues.map((issue)=>{
+          if(action.id === issue._id){
+            return action.editedIssue;
+          } else {
+              return issue;
+          }
+        });
+
 
       default:
       return prevIssues;

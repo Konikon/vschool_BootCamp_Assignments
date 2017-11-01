@@ -19,10 +19,24 @@ export function addIssue(issue){
       axios.post(issuesUrl, issue).then((response)=>{
           dispatch({
             type: "ADD_ISSUE",
-            issue
+            issue:response.data
           })
       }).catch((addIssueError)=>{
         console.log(addIssueError);
       })
   }
 }
+
+export function editIssue(id, editedIssue) {
+  return (dispatch) => {
+    axios.put(issuesUrl + id, editedIssue).then((response)=>{
+      dispatch({
+        type: "EDIT_ISSUE",
+        id,
+        editedIssue: response.data
+      })
+      }).catch((editIssueError)=>{
+        console.log(editIssueError);
+      })
+    }
+  }

@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
-import {issues} from "../../redux/actions/"
+import {issues} from "../../redux/actions/";
+import EditVoteContainer from "./issue/edit-vote/Container";
 
 function IssueComponent(props){
     return(
@@ -8,6 +9,7 @@ function IssueComponent(props){
             <h2>{props.issue.title} </h2>
             <h4> {props.issue.description} </h4>
             <EditVoteContainer issue={props.issue}/>
+            <hr/>
         </div>
     )
 }

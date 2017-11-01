@@ -1,13 +1,13 @@
 import React from "react";
 
 function AddFormComponent(props){
-  
+
   return(
     <div>
         <h1> Political Issues </h1>
         <button onClick={props.handleToggle}> Say Something</button>
           <div  className={props.toggleDisplay ? "show" : "hide"}>
-            <form onSubmit={()=>{}}>
+            <form onSubmit={props.addNewIssue}>
                 <input type="text"
                       name= "title"
                       placeholder="Add title                  "
@@ -22,6 +22,8 @@ function AddFormComponent(props){
 
                     <button type="submit">Post issue</button>
             </form>
+            <hr/>
+            <hr/>
           </div>
 
     </div>

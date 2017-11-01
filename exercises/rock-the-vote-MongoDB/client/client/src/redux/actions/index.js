@@ -1,6 +1,7 @@
-import {loadIssue, addIssue } from "./issues"
+import {loadIssue, addIssue, editIssue } from "./issues"
 
 export const issues ={
   loadIssue,
-  addIssue
+  addIssue,
+  editIssue
 }

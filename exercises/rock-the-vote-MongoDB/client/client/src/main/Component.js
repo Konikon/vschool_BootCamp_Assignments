@@ -1,9 +1,9 @@
 import React from "react";
-import IssuesComponent from "./issues/component";
+import IssueComponent from "./issues/Component";
 import {connect} from "react-redux";
 import {issues} from "../redux/actions/"
 
-class IssuesComponent extends React.Component(){
+class IssuesComponent extends React.Component{
     constructor(props){
       super(props);
       this.genList = this.genList.bind(this);
@@ -27,6 +27,7 @@ class IssuesComponent extends React.Component(){
 
 
     render(){
+      console.log(this.props)
       return(
         <div>
             {this.genList()}

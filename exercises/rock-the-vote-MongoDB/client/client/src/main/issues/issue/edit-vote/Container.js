@@ -1,13 +1,14 @@
 import React from "react";
 import EditVoteComponent from "./Component";
 import {connect} from "react-redux";
+import {issues} from "../../../../redux/actions/"
 
-class EditVoteContainer {
+class EditVoteContainer extends React.Component{
   constructor() {
     super();
     this.state = {
       toggleDisplay: false,
-      eidtVote: {
+      editVote: {
         upvote: 0,
         downvote: 0,
         comment: ""
@@ -15,6 +16,7 @@ class EditVoteContainer {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
+    this.handleComment = this.handleComment.bind(this);
   }
 
   handleChange(e){
@@ -38,14 +40,27 @@ class EditVoteContainer {
     })
   }
 
+  componentDidMount(){
+    this.props.loadIssue()
+  }
+
+  handleComment(){
+    this.setState((prevState)=>{
+      return
+    })
+  }
+
   render(){
       return(
           <div>
               <EditVoteComponent
+                issue={this.props.issue}
                 editVote={this.state.editVote}
                 handleChange={this.handleChange}
                 id={this.props.issue._id}
                 handleToggle={this.handleToggle}
+                handleVote={this.handleVote}
+                handleComment={this.handleComment}
                 />
           </div>
       )
@@ -59,4 +74,4 @@ const mapStateToProps = (state)=>{
     }
 }
 
-export default connect(mapStateToProps)(EditVoteContainer);
+export default connect(mapStateToProps, issues)(EditVoteContainer);

@@ -13,8 +13,14 @@ const issueSchema = new Schema({
   comment: [{
     type: String
   }],
-  upvote: Number,
-  downvote: Number,
+  upvote: {
+    type: Number,
+    default: 0
+  },
+  downvote: {
+    type: Number,
+    default: 0
+  },
   totalvote: Number
 })
 
