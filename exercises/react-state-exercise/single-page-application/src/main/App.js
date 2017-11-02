@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 import {Switch, Route} from "react-router-dom";
+
 import About from "./views/About";
 import Contact from "./views/Contact";
+import Navbar from "./Navbar";
 import ServicesContainer from "./views/services/Container";
 import Body from "./views/Body";
 import Footer from "./Footer";
