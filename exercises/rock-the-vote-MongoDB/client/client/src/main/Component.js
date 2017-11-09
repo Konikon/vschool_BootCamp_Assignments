@@ -25,7 +25,6 @@ class IssuesComponent extends React.Component{
             })
           }
 
-
     render(){
       console.log(this.props)
       return(
@@ -35,6 +34,7 @@ class IssuesComponent extends React.Component{
       )
     }
 }
+
 
 const mapStateToProps = (state)=>{
     return {
