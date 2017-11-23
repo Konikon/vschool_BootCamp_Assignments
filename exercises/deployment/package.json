@@ -1,0 +1,32 @@
+{
+  "name": "deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now"
+  },
+  "now":{
+    "name": "class-demo",
+    "alias": "class-demo",
+    "env": {
+      "PORT": 8080,
+      "SECRET": "@secret",
+      "DB": "@db"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.4",
+    "now": "^8.5.2",
+    "path": "^0.12.7",
+    "react": "^16.1.1"
+  }
+}
