@@ -9,7 +9,19 @@ function Footer(){
               <a
                   target="_blank"
                   className="links"
-                  href="https://github.com/jamie29w">
+                  href="https://github.com/konikon">
+                  <i className="fa fa-github fa-lg" aria-hidden="true" />
+              </a>
+              <a
+                  target="_blank"
+                  className="links"
+                  href="https://github.com/konikon">
+                  <i className="fa fa-github fa-lg" aria-hidden="true" />
+              </a>
+              <a
+                  target="_blank"
+                  className="links"
+                  href="https://github.com/konikon">
                   <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
           </span>
