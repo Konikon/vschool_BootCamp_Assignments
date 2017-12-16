@@ -7,21 +7,18 @@ function Footer(){
       <div>
           <span className="a">
               <a
-                  target="_blank"
                   className="links"
                   href="https://github.com/konikon">
                   <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
               <a
-                  target="_blank"
                   className="links"
                   href="https://github.com/konikon">
                   <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
               <a
-                  target="_blank"
                   className="links"
-                  href="https://github.com/konikon">
+                  href="view my resume">
                   <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
           </span>
