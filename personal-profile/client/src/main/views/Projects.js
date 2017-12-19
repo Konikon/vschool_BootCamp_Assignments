@@ -1,11 +1,10 @@
 import React from "react";
 
-function Header(){
+function Projects(){
     return(
         <div>
-        Hi header!
         </div>
     )
 }
 
-export default Header;
+export default Projects;

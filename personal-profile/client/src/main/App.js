@@ -6,15 +6,19 @@ import Header from "./views/Header";
 import Body from "./views/Body";
 import Footer from "./views/Footer";
 import LandPage from "./views/LandPage";
-import Profile from "./view/Resume";
+import Resume from "./views/Resume";
+import Projects from "./views/Projects";
 
 function App(){
-  render(
-    <div>
-        <LandPage />
+  return(
+    <div className="app_wrapper">
         <Header />
-        <Body />
-        <Resume />
+        <Switch>
+            <Route exact path="/" component={LandPage} />
+            <Route path="/about" component={Body} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/projects" component={Projects} />
+        </Switch>
         <Footer />
     </div>
   )
