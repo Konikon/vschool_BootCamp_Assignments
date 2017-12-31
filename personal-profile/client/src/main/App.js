@@ -2,8 +2,7 @@ import React from "react";
 import {Switch, Route} from "react-router-dom";
 
 
-import Header from "./views/Header";
-import Body from "./views/Body";
+import Header from "./views/Navbar/Header";
 import Footer from "./views/Footer";
 import LandPage from "./views/LandPage";
 import Resume from "./views/Resume";
@@ -15,7 +14,6 @@ function App(){
         <Header />
         <Switch>
             <Route exact path="/" component={LandPage} />
-            <Route path="/about" component={Body} />
             <Route path="/resume" component={Resume} />
             <Route path="/projects" component={Projects} />
         </Switch>
