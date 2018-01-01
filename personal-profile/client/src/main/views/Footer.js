@@ -9,17 +9,14 @@ function Footer(){
               <a
                   className="links"
                   href="https://github.com/konikon">
-                  <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
               <a
                   className="links"
                   href="https://github.com/konikon">
-                  <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
               <a
                   className="links"
                   href="view my resume">
-                  <i className="fa fa-github fa-lg" aria-hidden="true" />
               </a>
           </span>
       </div>
