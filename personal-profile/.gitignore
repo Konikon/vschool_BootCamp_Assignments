@@ -1,0 +1,14 @@
+/node_modules
+.DS_Store
+*.com
+*.dll
+*.exe
+*.zip
+#.iso
+*.log
+logs
+npm-debut.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
