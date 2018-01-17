@@ -1,4 +1,6 @@
 import React from "react";
+import github from "../images/github3.png";
+import linkedin from "../images/linkedin.png";
 
 function Footer(){
   return(
@@ -9,12 +11,12 @@ function Footer(){
               <a
                   className="links"
                   href="https://github.com/konikon">
-                  <img src="../../images/github3.png" alt ="github logo"></img>
+                  <img src="github" alt ="github logo"></img>
               </a>
               <a
                   className="links"
                   href="https://www.linkedin.com/in/mkarmarkar/">
-                  <img src="../../images/linkedin.png" alt ="linkedin logo"></img>
+                  <img src="linkedin" alt ="linkedin logo"></img>
               </a>
               <a
                   className="links"
