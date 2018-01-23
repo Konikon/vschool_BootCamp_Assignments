@@ -11,9 +11,13 @@ import Projects from "./views/Projects";
 function App(){
   return(
     <div className="app_wrapper">
-        <Header />
+
         <Switch>
             <Route exact path="/" component={LandPage} />
+        </Switch>
+
+        <Header/>
+        <Switch>
             <Route path="/resume" component={Resume} />
             <Route path="/projects" component={Projects} />
         </Switch>
