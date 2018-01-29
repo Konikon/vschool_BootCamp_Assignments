@@ -20,6 +20,10 @@ body {
 .landPage_wrapper{
   background-color: #FFC932;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
 }
 
 .landPage_name{
@@ -36,4 +40,44 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.flipper{
+  perspective: 1000px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.card{
+  transition: all 1.2s;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.card img{
+  height: 200px;
+  width:200px;
+
+}
+
+.front{
+  z-index: 2;
+}
+
+.back{
+  z-index: 1;
+  transform: rotateY(-180deg);
+}
+
+.flipper:hover .front{
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.flipper:hover .back{
+  z-index: 2;
+  transform: rotateX(0deg);
 }
